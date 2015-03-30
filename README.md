@@ -1,14 +1,20 @@
 # string-width
 
-A Clojure library designed to ... well, that part is up to you.
+This is Clojure port of [go-runewidth](https://github.com/mattn/go-runewidth).
 
 ## Usage
 
-FIXME
+```clojure
+(require '[string-width])
+
+(string-width/char-width \a)  ; => 1
+(string-width/char-width \あ) ; => 2
+
+(string-width/string-width "あいうえお") ; => 10
+```
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 Syohei YOSHIDA
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License either version 1.0 or any later version.
